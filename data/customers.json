@@ -1,0 +1,22 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "email": "john.smith@example.com",
+            "phone": "+1-555-0101",
+            "company": "Acme Corp",
+            "status": "active",
+            "createdAt": "2024-01-15"
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "email": "jane.doe@example.com",
+            "phone": "+1-555-0102",
+            "company": "Tech Solutions",
+            "status": "active",
+            "createdAt": "2024-01-16"
+        }
+    ]
+}
