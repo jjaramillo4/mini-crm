@@ -1,12 +1,30 @@
-retrieveFiles() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve([
-          { id: 1, name: 'File 1', size: '2MB' },
-          { id: 2, name: 'File 2', size: '5MB' },
-          { id: 3, name: 'File 3', size: '1MB' },
-        ]);
-      }, 1000);
+
+fetchProjects = async () => {
+    const response = await fetch('/api/projects');
+    const data = await response.json();
+    return data;
 }
+
+fetchMemos = async () => {
+    const response = await fetch('/api/memo');
+    const data = await response.json()
+    return data
 }
-//Fake crm API
+
+fetchCustomers = async () => {
+    const response = await fetch('api/customers');
+    const data = await response.json();
+    return data;
+}
+
+const MyPromise = new Promise((resolve, reject) => {
+    const success = true;
+
+    if(success) {
+        resolve('Promise resolved successfully!');
+    } else {
+        reject(new Error('Promise rejected!'));
+    }
+});
+
+MyPromise.then(result)
